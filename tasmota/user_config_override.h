@@ -23,20 +23,26 @@
 // force the compiler to show a warning to confirm that this file is included
 #warning **** user_config_override.h: Using Settings from this File ****
 
+// https://tasmota.github.io/docs/AM2301/
 
+// https://tasmota.github.io/docs/MLX90614/
 #ifndef USE_MLX90614
 #define USE_MLX90614            // [I2cDriver32] Enable MLX90614 ir temp sensor (I2C address 0x5a) (+0.6k code)
 #endif
 
+// https://tasmota.github.io/docs/VL53L0x/
 #ifndef USE_VL53L0X
 #define USE_VL53L0X             // [I2cDriver31] Enable VL53L0x time of flight sensor (I2C address 0x29) (+4k code)
 #endif
 
+// https://tasmota.github.io/docs/BME680/
 #ifndef USE_BME680
 #define USE_BMP                                  // Add I2C code for BMP085/BMP180/BMP280/BME280 sensor (+4k code)
 #define USE_BME680              // Add additional support for BME680 sensor using Bosch BME680 library (+4k code)
 #endif
 
+// https://tasmota.github.io/docs/AS3935/
+// https://github.com/arendst/Tasmota/pull/8130
 #ifndef USE_AS3935
 #define USE_AS3935              // [I2cDriver48] Enable AS3935 Franklin Lightning Sensor (I2C address 0x03) (+5k4 code)
 #endif
